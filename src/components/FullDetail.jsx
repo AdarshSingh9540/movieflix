@@ -19,7 +19,7 @@ function FullDetail() {
 
   return (
     
-    <div className='bg-slate-600'>
+    <div className='bg-slate-400'>
     <div className='text-white font-bold'>
       <Link to={'/browser'}><button className='bg-blue-500 p-2 rounded-lg mt-6 m-4 lg:mx-16'> <span className='text-white font-bold text-xl pr-1'>← </span> Home</button></Link>
     </div>
