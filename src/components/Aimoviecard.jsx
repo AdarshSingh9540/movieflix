@@ -3,14 +3,14 @@ import { IMG_CDN_URL } from "../utils/Constant";
 const Aimoviecard = ({ movie }) => {
   return (
     <div className=" md:flex mx-2 lg:mx-44 bg-slate-900 rounded-lg p-2 lg:p-4 my-4 lg:my-12 shadow-2xl">
-      <div className="flex items-center rounded-md">
+      <div className="flex text-center rounded-md">
         <img
           src={IMG_CDN_URL + movie.poster_path}
-          className="w-[90%] h-44 md:h-60 lg:h-64 m-4   lg:mt-0  lg:m-0 lg:w-48 rounded-xl hover:scale-105 duration-200 shadow-2xl cursor-pointer"
+          className="w-[60%] mx-auto lg:w-[90%] h-64 items-center md:h-60 lg:h-80 m-4 lg:mt-0  lg:m-0  rounded-xl hover:scale-105 duration-200 shadow-2xl cursor-pointer"
           alt="Movie Poster"
         />
       </div>
-      <div className="m-2 md:m-8 ml-1 md:ml-10 lg:ml- mt-2 md:mt-10 p-3 md:p-7 flex-1">
+      <div className="m-2 md:m-8 ml-1 md:ml-10 lg:ml- mt-2 md:mt-10 p-3 md:p-7 flex-1 ">
         <h1 className="text-white font-semibold text-xl md:text-4xl lg:text-4xl">{movie.original_title}</h1>
         <h2 className="text-white opacity-60 mt-2 md:mt-4">{movie.release_date}</h2>
         <h2 className="text-white text-lg md:text-xl mt-2 ">  
