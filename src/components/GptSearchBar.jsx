@@ -51,7 +51,7 @@ const GptSearchBar = () => {
         const genAI = new GoogleGenerativeAI(apiKey);
         const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
-        const gptQuery = `Act as a movies recommendation system and suggest some movies for the query ${searchText.current.value}. Give me the names of only the top five movies, comma-separated, like the example ahead. Example: Gadar2, Fighter, etc.`;
+        const gptQuery = `Act as a movies recommendation system and suggest some movies for the query ${searchText.current.value}. Give me the names of only the top ten movies, comma-separated, like the example ahead. Example: Gadar2, Fighter, etc.`;
 
         try {
             const result = await model.generateContent(gptQuery);
